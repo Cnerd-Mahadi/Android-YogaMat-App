@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_yoga"
+    app:startDestination="@id/yogaListFragment">
+    <fragment
+        android:id="@+id/yogaListFragment"
+        android:name="com.example.yogamat.view.YogaListFragment"
+        android:label="YogaListFragment" >
+        <action
+            android:id="@+id/action_yogaListFragment_to_yogaDetailsFragment"
+            app:destination="@id/yogaDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yogaDetailsFragment"
+        android:name="com.example.yogamat.view.YogaDetailsFragment"
+        android:label="fragment_yoga_details"
+        tools:layout="@layout/fragment_yoga_details" >
+        <argument
+            android:name="yogaId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Yoga Mat</string>
+    <string name="welcome_button_note">Welcome</string>
+    <string name="start_fresh_string">Start Your Day Fresh</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="yoga_title">
+        <item>Downward Facing Dog</item>
+        <item>Mountain Pose</item>
+        <item>Warrior I</item>
+        <item>Warrior II</item>
+        <item>Extended Side Angle</item>
+        <item>Triangle Pose</item>
+        <item>Standing Forward Bend</item>
+    </string-array>
+
+    <string-array name="yoga_images">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+        <item>seven</item>
+    </string-array>
+
+
+    <string-array name="yoga_details">
+        <item>
+            "Downward Facing Dog goes hand in hand with yoga, but just because you've heard of this pose doesn't mean it's easy to do.Beginners often lean too far forward in this posture, making it more like a plank. Instead, remember to keep your weight mostly in your legs and reach your hips high, with your heels stretching toward the floor (they do not need to touch the floor).Bend your knees a little to facilitate the move if you have tight hamstrings. Keep feet parallel."
+        </item>
+
+        <item>
+            "Mountain pose may not be as famous as Downward Facing Dog, but it is equally important. This is an excellent time to talk about alignment, which is how your body parts are ideally arranged in each pose.The alignment in Mountain pose draws a straight line from the crown of your head to your heels, with the shoulders and pelvis stacked along the line. Every person's body is different, so focus on rooting down with your feet and lengthening up with your spine."
+        </item>
+
+        <item>
+            "The critical thing to remember in Warrior I is that the hips face forward. Think of your hip points as headlights—they should be roughly parallel with the front of your mat. This may require you to take a wider stance."
+        </item>
+
+        <item>
+            "Unlike Warrior I, in Warrior II, the hips face the side of the mat. The hips and shoulders open to the side when moving from Warrior I to Warrior II.You'll also rotate your back foot, angling your toes at about 45 degrees. In both Warrior poses, aim to keep your front knee stacked over the ankle. Your front toes face forward."
+        </item>
+
+        <item>
+            "One modification of Extended Side Angle Pose is to bring your forearm to your thigh instead of placing your hand on the floor. It should rest lightly on your thigh and not bear much weight. This modification enables you to keep your shoulders open. You can also place your hand on a block.If you reach toward the floor before you're ready, you may compromise the position of the torso, turning your chest toward the floor instead of toward the ceiling."
+        </item>
+
+        <item>
+            "The Triangle can be modified like Extended Side Angle, using a yoga block for your bottom hand if you aren't comfortable reaching your arm to the floor. You can also rest your hand higher up on your leg—on your shin or thigh—but avoid putting it directly on your knee.Don't hesitate to micro-bend both knees if the pose feels uncomfortable. This won't look or feel like a pronounced bend, but rather, just enough of a movement to unlock your knees and ease tension in your hamstrings.Triangle offers many benefits: Strength (in the legs), flexibility (in the groin, hamstrings, and hips, as well as opening the chest and shoulders), and balance."
+        </item>
+
+        <item>
+            "To do Standing Forward, Bend, exhale, and fold over your legs. If the hamstrings feel a little tight at first, bend the knees so that you can release your spine. Let the head hang heavy.Keep the legs gently bent with feet hip-width apart for better stability (you can straighten the legs, but it is unnecessary). You can clasp opposite elbows with opposite hands while swaying gently from side to side."
+        </item>
+
+    </string-array>
+
+</resources>
