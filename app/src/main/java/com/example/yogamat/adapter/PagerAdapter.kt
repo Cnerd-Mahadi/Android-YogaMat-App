@@ -10,6 +10,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 class PagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle):
     FragmentStateAdapter(fragmentManager, lifecycle) {
 
+
     init {
         registerFragmentTransactionCallback(object : FragmentTransactionCallback() {
             override fun onFragmentMaxLifecyclePreUpdated(
@@ -20,6 +21,7 @@ class PagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle):
                 OnPostEventListener {
                     fragment.parentFragmentManager.commitNow {
                         setPrimaryNavigationFragment(fragment)
+
                     }
                 }
             }

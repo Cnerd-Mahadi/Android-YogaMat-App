@@ -5,16 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import androidx.navigation.fragment.findNavController
-import com.example.yogamat.R
 import com.example.yogamat.adapter.ListMyYogaAdapter
 import com.example.yogamat.adapter.OnClickMyAction
 import com.example.yogamat.databinding.FragmentMyYogaListBinding
 import com.example.yogamat.viewmodel.MyYogaListViewModel
+import com.example.yogamat.viewmodel.RouteUtilViewModel
 import kotlinx.coroutines.launch
 import java.util.*
 
@@ -25,6 +25,7 @@ class MyYogaListFragment : Fragment(),OnClickMyAction {
             throw IllegalStateException("View not bound")
         }
     private val viewModel: MyYogaListViewModel by viewModels()
+    private val routeUtilViewModel by activityViewModels<RouteUtilViewModel>()
 
 
     override fun onCreateView(
@@ -50,11 +51,16 @@ class MyYogaListFragment : Fragment(),OnClickMyAction {
                 }
             }
         }
+    }
 
+    override fun onResume() {
+        super.onResume()
+        routeUtilViewModel.tabVisibility.value = true
+    }
 
-
-
-
+    override fun onPause() {
+        super.onPause()
+        routeUtilViewModel.tabVisibility.value = false
     }
 
     override fun onDestroy() {

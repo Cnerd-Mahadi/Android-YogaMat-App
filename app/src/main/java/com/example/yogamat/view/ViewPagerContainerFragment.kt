@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.viewpager2.widget.ViewPager2
+import com.example.yogamat.R
 import com.example.yogamat.adapter.PagerAdapter
 import com.example.yogamat.databinding.FragmentViewPagerContainerBinding
 import com.example.yogamat.viewmodel.RouteUtilViewModel
@@ -61,8 +62,9 @@ class ViewPagerContainerFragment : Fragment() {
         TabLayoutMediator(binding.yogaTab, binding.yogaPager) { tab, position ->
             tab.text = adapter.getTitle(position)
         }.attach()
-    }
 
+
+    }
 
 
     override fun onDestroy() {
@@ -70,4 +72,6 @@ class ViewPagerContainerFragment : Fragment() {
         binding.yogaPager.adapter = null
         _binding = null
     }
+
+
 }

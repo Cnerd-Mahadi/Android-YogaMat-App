@@ -53,8 +53,17 @@ class YogaListFragment : Fragment(), OnClickAction{
 
         binding.yogaRecyclerView.layoutManager = LinearLayoutManager(context)
         binding.yogaRecyclerView.adapter = ListYogaAdapter(viewModel.yogaList, this@YogaListFragment, requireContext())
-        routeUtilViewModel.tabVisibility.value = true
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        routeUtilViewModel.tabVisibility.value = true
+    }
+
+    override fun onPause() {
+        super.onPause()
+        routeUtilViewModel.tabVisibility.value = false
     }
 
 

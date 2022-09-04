@@ -66,7 +66,6 @@ class YogaDetailsFragment : Fragment() {
         val imgResId = checkNotNull(context?.
             resources?.getIdentifier(viewModel.yoga?.image, "drawable", context?.packageName))
         Picasso.get().load(imgResId).resize(400, 350).into(binding.yogaDetailsImageview)
-        //routeUtilViewModel.tabVisibility.value = false
 
     }
 
