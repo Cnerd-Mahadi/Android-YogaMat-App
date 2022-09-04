@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -20,6 +21,7 @@ import com.example.yogamat.R
 import com.example.yogamat.databinding.FragmentYogaDetailsBinding
 import com.example.yogamat.databinding.FragmentYogaListBinding
 import com.example.yogamat.model.Yoga
+import com.example.yogamat.viewmodel.RouteUtilViewModel
 import com.example.yogamat.viewmodel.YogaDetailsViewModel
 import com.example.yogamat.viewmodel.YogaDetailsViewModelFactory
 import com.google.gson.Gson
@@ -42,6 +44,7 @@ class YogaDetailsFragment : Fragment() {
     private val viewModel: YogaDetailsViewModel by viewModels{
         YogaDetailsViewModelFactory(args.yogaId, application)
     }
+    private val routeUtilViewModel by activityViewModels<RouteUtilViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -63,6 +66,7 @@ class YogaDetailsFragment : Fragment() {
         val imgResId = checkNotNull(context?.
             resources?.getIdentifier(viewModel.yoga?.image, "drawable", context?.packageName))
         Picasso.get().load(imgResId).resize(400, 350).into(binding.yogaDetailsImageview)
+        //routeUtilViewModel.tabVisibility.value = false
 
     }
 

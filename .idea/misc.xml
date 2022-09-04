@@ -4,19 +4,29 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable-v24/button_accent.xml" value="0.1595" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.121" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable-v24/page_back_accent.xml" value="0.1595" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable-v24/tab_accent.xml" value="0.1595" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable-v24/upward_accent.xml" value="0.1595" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/card_accent.xml" value="0.1585" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/coffee_cup.xml" value="0.121" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/donut_with_sprinkles.xml" value="0.121" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/ic_clear_24px.xml" value="0.121" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/tab_ind_accent.xml" value="0.1595" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/activity_welcome.xml" value="0.2039333048311244" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/activity_yoga_dash.xml" value="0.2" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_my_yoga.xml" value="0.2039333048311244" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_my_yoga_dash.xml" value="0.13424540401881147" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_my_yoga_details.xml" value="0.20521590423257802" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_my_yoga_host.xml" value="0.20521590423257802" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_my_yoga_list.xml" value="0.20521590423257802" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_parent_my_yoga.xml" value="0.10987601539119282" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_parent_yoga.xml" value="0.20521590423257802" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_view_pager_container.xml" value="0.20521590423257802" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_yoga_dash.xml" value="0.16" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_yoga_details.xml" value="0.1" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_yoga_host.xml" value="0.20521590423257802" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_yoga_list.xml" value="0.2" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_yoga_parent.xml" value="0.2039333048311244" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/yoga_list_item.xml" value="0.264" />
