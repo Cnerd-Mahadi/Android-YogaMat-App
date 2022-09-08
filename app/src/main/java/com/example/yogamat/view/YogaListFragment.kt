@@ -51,6 +51,7 @@ class YogaListFragment : Fragment(), OnClickAction{
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         binding.yogaRecyclerView.layoutManager = LinearLayoutManager(context)
         binding.yogaRecyclerView.adapter = ListYogaAdapter(viewModel.yogaList, this@YogaListFragment, requireContext())
 

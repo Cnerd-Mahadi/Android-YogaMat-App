@@ -21,9 +21,6 @@ class YogaDetailsViewModel(
     application: Application
 ): ViewModel() {
 
-    private var _yogaList = mutableListOf<Yoga>()
-    val yogaList
-        get() = _yogaList
     private var _yoga: Yoga? = null
     val yoga
     get() = _yoga

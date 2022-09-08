@@ -17,5 +17,16 @@
         tools:context=".view.MyYogaListFragment"
         tools:listitem="@layout/yoga_list_item" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_my_yoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="@color/accent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@ import java.util.*
 class MyYogaListViewModel(
 ): ViewModel() {
 
-    private val yogaRepo  = YogaRepo(YogaDatabase.getDB())
+    val yogaRepo  = YogaRepo(YogaDatabase.getDB())
     private var _yogaList: MutableStateFlow<List<MyYoga>> = MutableStateFlow(emptyList())
     val yogaList
     get() = _yogaList.asStateFlow()
@@ -35,6 +35,8 @@ class MyYogaListViewModel(
             }
         }
     }
+
+
 
 
 }

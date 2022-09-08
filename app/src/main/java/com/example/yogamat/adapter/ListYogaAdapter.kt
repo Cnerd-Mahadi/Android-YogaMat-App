@@ -2,6 +2,7 @@ package com.example.yogamat.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.StringRes
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +22,7 @@ class ListYogaAdapter(
     inner class ListYogaViewHolder(binding: YogaListItemBinding):RecyclerView.ViewHolder(binding.root){
         fun bindJob(yoga: Yoga, action: OnClickAction) {
 
+            binding.deleteButton.visibility = View.GONE
             binding.yogaTitle.text = yoga.title
             binding.yogaDetails.text = yoga.details
             val currentImageResId = context.resources.getIdentifier(yoga.image, "drawable", context.packageName)

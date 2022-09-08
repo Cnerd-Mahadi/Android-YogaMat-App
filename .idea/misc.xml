@@ -11,11 +11,14 @@
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/card_accent.xml" value="0.1585" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/coffee_cup.xml" value="0.121" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/donut_with_sprinkles.xml" value="0.121" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/edit_accent.xml" value="0.1445" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1445" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/ic_clear_24px.xml" value="0.121" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/drawable/tab_ind_accent.xml" value="0.1595" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/activity_welcome.xml" value="0.2039333048311244" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/activity_yoga_dash.xml" value="0.2" />
+        <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_create_yoga_dialogue.xml" value="0.264" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_my_yoga.xml" value="0.2039333048311244" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_my_yoga_dash.xml" value="0.13424540401881147" />
         <entry key="..\:/CoolStuff/Android_Projects/YogaMat/app/src/main/res/layout/fragment_my_yoga_details.xml" value="0.20521590423257802" />
