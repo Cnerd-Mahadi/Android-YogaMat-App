@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_myYogaListFragment_to_myYogaDetailsFragment"
             app:destination="@id/myYogaDetailsFragment" />
+        <action
+            android:id="@+id/action_myYogaListFragment_to_createYogaDialogueFragment"
+            app:destination="@id/createYogaDialogueFragment" />
     </fragment>
     <fragment
         android:id="@+id/myYogaDetailsFragment"
@@ -23,4 +26,13 @@
             android:name="yogaId"
             app:argType="java.util.UUID" />
     </fragment>
+    <dialog
+        android:id="@+id/createYogaDialogueFragment"
+        android:name="com.example.yogamat.view.CreateYogaDialogueFragment"
+        android:label="fragment_create_yoga_dialogue"
+        tools:layout="@layout/fragment_create_yoga_dialogue" >
+        <action
+            android:id="@+id/action_createYogaDialogueFragment_to_myYogaListFragment"
+            app:popUpTo="@id/myYogaListFragment" />
+    </dialog>
 </navigation>

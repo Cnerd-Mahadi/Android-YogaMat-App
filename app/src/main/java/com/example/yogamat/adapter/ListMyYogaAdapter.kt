@@ -32,6 +32,10 @@ class ListMyYogaAdapter(
                 action.onCLick(yoga.id)
             }
 
+            binding.deleteButton.setOnClickListener {
+                action.onDelete(yoga)
+            }
+
         }
 
     }
@@ -68,4 +72,5 @@ class ListMyYogaAdapter(
 interface OnClickMyAction {
 
     fun onCLick(id: UUID)
+    fun onDelete(yoga:MyYoga)
 }
