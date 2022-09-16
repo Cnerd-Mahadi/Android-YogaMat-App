@@ -8,8 +8,6 @@
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:layout_marginBottom="10dp"
-    android:background="@drawable/card_accent"
-    android:elevation="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
@@ -32,8 +30,6 @@
         app:layout_constraintLeft_toRightOf="@id/yoga_list_imageview"
         android:padding="5dp"
         tools:text="The Updog Pose"
-        android:textColor="@color/heading"
-        android:fontFamily="sans-serif-medium"
         android:textSize="15sp"
         />
 
@@ -48,8 +44,6 @@
         tools:text="Enable your body and mind to take the journey into another level"
         android:ellipsize="end"
         android:maxLines="1"
-        android:textColor="@color/secondary_text"
-        android:fontFamily="sans-serif-medium"
         android:textSize="13sp"
         />
 

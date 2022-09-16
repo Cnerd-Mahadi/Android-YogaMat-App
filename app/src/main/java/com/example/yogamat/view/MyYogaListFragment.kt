@@ -18,6 +18,7 @@ import com.example.yogamat.adapter.OnClickMyAction
 import com.example.yogamat.databinding.FragmentMyYogaListBinding
 import com.example.yogamat.model.MyYoga
 import com.example.yogamat.viewmodel.MyYogaListViewModel
+import com.example.yogamat.viewmodel.MyYogaListViewModelFactory
 import com.example.yogamat.viewmodel.RouteUtilViewModel
 import kotlinx.coroutines.launch
 import java.util.*
@@ -28,7 +29,9 @@ class MyYogaListFragment : Fragment(),OnClickMyAction {
         get() = checkNotNull(_binding) {
             throw IllegalStateException("View not bound")
         }
-    private val viewModel: MyYogaListViewModel by viewModels()
+    private val viewModel: MyYogaListViewModel by viewModels(){
+        MyYogaListViewModelFactory(requireActivity().application)
+    }
     private val routeUtilViewModel by activityViewModels<RouteUtilViewModel>()
 
 
@@ -52,7 +55,7 @@ class MyYogaListFragment : Fragment(),OnClickMyAction {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.yogaList.collect{ currentList ->
                     binding.yogaRecyclerView.layoutManager = LinearLayoutManager(context)
-                    binding.yogaRecyclerView.adapter = ListMyYogaAdapter(currentList, this@MyYogaListFragment, requireContext())
+                    binding.yogaRecyclerView.adapter = ListMyYogaAdapter(currentList, this@MyYogaListFragment, viewModel.yogaRepo)
                     //Log.d("REL", currentList[0].title)
                 }
             }

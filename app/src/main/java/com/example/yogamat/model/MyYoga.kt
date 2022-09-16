@@ -9,7 +9,10 @@ import java.util.*
 data class MyYoga(
     @PrimaryKey
     val id: UUID,
-    val title: String,
-    val details: String,
-    val image: String
-)
+    var title: String = "",
+    var details: String = "",
+    var image: String = ""
+) {
+    val photoFileName: String
+    get() = "IMG_$id"
+}

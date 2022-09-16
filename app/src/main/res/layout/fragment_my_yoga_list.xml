@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".view.MyYogaListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -13,8 +12,6 @@
         android:layout_height="match_parent"
         android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@color/background"
-        tools:context=".view.MyYogaListFragment"
         tools:listitem="@layout/yoga_list_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -23,7 +20,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:src="@drawable/ic_baseline_add_24"
-        app:backgroundTint="@color/accent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />

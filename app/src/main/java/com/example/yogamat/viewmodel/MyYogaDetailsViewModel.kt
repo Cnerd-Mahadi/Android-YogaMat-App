@@ -1,5 +1,6 @@
 package com.example.yogamat.viewmodel
 
+import android.app.Application
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -12,10 +13,11 @@ import kotlinx.coroutines.launch
 import java.util.*
 
 class MyYogaDetailsViewModel(
-    private val id: UUID
+    private val id: UUID,
+    application: Application
 ): ViewModel() {
 
-    private val yogaRepo  = YogaRepo(YogaDatabase.getDB())
+    val yogaRepo  = YogaRepo(YogaDatabase.getDB(), application.applicationContext)
     private val _yoga: MutableStateFlow<MyYoga?> = MutableStateFlow(null)
     val yoga =  _yoga.asStateFlow()
 

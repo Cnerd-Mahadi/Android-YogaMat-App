@@ -9,13 +9,14 @@ import com.example.yogamat.R
 import com.example.yogamat.databinding.YogaListItemBinding
 import com.example.yogamat.model.MyYoga
 import com.example.yogamat.model.Yoga
+import com.example.yogamat.model.YogaRepo
 import com.squareup.picasso.Picasso
 import java.util.*
 
 class ListMyYogaAdapter(
     private val yogaList: List<MyYoga>,
     private val action: OnClickMyAction,
-    private val context: Context
+    private val yogaRepo: YogaRepo
 ): RecyclerView.Adapter<ListMyYogaAdapter.ListMyYogaViewHolder>() {
 
     lateinit var binding: YogaListItemBinding
@@ -25,8 +26,7 @@ class ListMyYogaAdapter(
 
             binding.yogaTitle.text = yoga.title
             binding.yogaDetails.text = yoga.details
-            val currentImageResId = context.resources.getIdentifier(yoga.image, "drawable", context.packageName)
-            Picasso.get().load(currentImageResId).resize(400, 350).into(binding.yogaListImageview)
+            Picasso.get().load(yogaRepo.getImageUri(yoga)).resize(400, 350).into(binding.yogaListImageview)
 
             binding.root.setOnClickListener {
                 action.onCLick(yoga.id)

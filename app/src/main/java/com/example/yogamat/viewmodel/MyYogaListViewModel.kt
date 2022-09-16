@@ -20,9 +20,10 @@ import kotlinx.coroutines.launch
 import java.util.*
 
 class MyYogaListViewModel(
+    private val application: Application
 ): ViewModel() {
 
-    val yogaRepo  = YogaRepo(YogaDatabase.getDB())
+    val yogaRepo  = YogaRepo(YogaDatabase.getDB(), application.applicationContext)
     private var _yogaList: MutableStateFlow<List<MyYoga>> = MutableStateFlow(emptyList())
     val yogaList
     get() = _yogaList.asStateFlow()

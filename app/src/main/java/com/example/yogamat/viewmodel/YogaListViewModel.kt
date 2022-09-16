@@ -35,7 +35,6 @@ class YogaListViewModel(
             val yoga = Yoga(i, yogaTitleString[i], yogaDetailsString[i], yogaImageString[i])
             yogaList.add(yoga)
         }
-
         val sharedData = application.getSharedPreferences("data", Context.MODE_PRIVATE)
         val sharedDataToJson = Gson().toJson(yogaList)
         sharedData.edit().apply {

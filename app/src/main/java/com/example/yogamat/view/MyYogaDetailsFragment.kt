@@ -26,7 +26,7 @@ class MyYogaDetailsFragment : Fragment() {
         }
     private val args: MyYogaDetailsFragmentArgs by navArgs()
     private val viewModel: MyYogaDetailsViewModel by viewModels {
-        MyYogaDetailsViewModelFactory(args.yogaId)
+        MyYogaDetailsViewModelFactory(args.yogaId, requireActivity().application)
     }
 
     override fun onCreateView(
@@ -50,9 +50,7 @@ class MyYogaDetailsFragment : Fragment() {
                     data?.let { currentYoga ->
                         binding.yogaDetailsTitle.text = currentYoga.title
                         binding.yogaDetailsDetailsText.text = currentYoga.details
-                        val imgResId = checkNotNull(requireContext().
-                        resources.getIdentifier(currentYoga.image, "drawable", requireContext().packageName))
-                        Picasso.get().load(imgResId).resize(400, 350).into(binding.yogaDetailsImageview)
+                        Picasso.get().load(viewModel.yogaRepo.getImageUri(currentYoga)).resize(400, 350).into(binding.yogaDetailsImageview)
                     }
 
                 }
