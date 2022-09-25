@@ -23,7 +23,7 @@ class YogaDetailsViewModel(
 
     private var _yoga: Yoga? = null
     val yoga
-    get() = _yoga
+        get() = _yoga
 
     init {
 

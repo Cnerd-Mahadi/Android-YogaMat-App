@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     >
 
 
@@ -11,7 +12,6 @@
             android:id="@+id/yoga_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:context=".view.YogaListFragment"
             tools:listitem="@layout/yoga_list_item" />

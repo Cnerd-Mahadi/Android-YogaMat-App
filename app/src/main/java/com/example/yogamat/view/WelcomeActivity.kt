@@ -16,6 +16,8 @@ class WelcomeActivity: AppCompatActivity() {
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         binding.welcomeButton.setOnClickListener {
             Intent(this, YogaDashActivity:: class.java).also {
                 startActivity(it)

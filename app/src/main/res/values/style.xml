@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="card_view" parent="Widget.Material3.CardView.Elevated">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+
+    <style name="tab_style" parent="Widget.Material3.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="android:background">@color/primary</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">#343a40</item>
+        <item name="tabIndicatorGravity">bottom</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="android:padding">8dp</item>
+        <item name="elevation">5dp</item>
+        <item name="tabTextAppearance">?attr/textAppearanceButton</item>
+    </style>
+
+    <style name="list_title_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:padding">4dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+
+    </style>
+
+    <style name="list_detail_text" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="title_text" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/secondary</item>
+        <item name="fontFamily">@font/anton</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="detail_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="welcome_label" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="fontFamily">@font/anton</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="welcome_label_detail" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="elevated_button" parent="ThemeOverlay.Material3.Button.ElevatedButton">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="welcome_button" parent="ThemeOverlay.Material3.Button.ElevatedButton">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.HeadlineSmall</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="edit_text_style" parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="boxBackgroundColor">#edf2f4</item>
+    </style>
+
+
+
+    <style name="ModalBottomSheetDialog" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/background</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.LargeComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+
+
+</resources>
