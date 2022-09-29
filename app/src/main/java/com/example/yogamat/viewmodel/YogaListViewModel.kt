@@ -5,6 +5,7 @@ import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.yogamat.R
+import com.example.yogamat.model.DataStoreManager
 import com.example.yogamat.model.Yoga
 import com.google.gson.Gson
 import kotlinx.coroutines.launch
@@ -27,11 +28,11 @@ class YogaListViewModel(
             val yoga = Yoga(i, yogaTitleString[i], yogaDetailsString[i], yogaImageString[i])
             yogaList.add(yoga)
         }
-        val sharedData = application.getSharedPreferences("data", Context.MODE_PRIVATE)
         val sharedDataToJson = Gson().toJson(yogaList)
-        sharedData.edit().apply {
-            putString("yogaData", sharedDataToJson)
-            apply()
+        viewModelScope.launch {
+            
+            DataStoreManager(application.applicationContext).setData(sharedDataToJson)
+
         }
     }
 

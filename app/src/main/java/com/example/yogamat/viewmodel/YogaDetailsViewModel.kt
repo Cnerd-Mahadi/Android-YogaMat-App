@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.yogamat.model.DataStoreManager
 import com.example.yogamat.model.Yoga
 import com.example.yogamat.model.YogaDatabase
 import com.example.yogamat.model.YogaRepo
@@ -27,10 +28,18 @@ class YogaDetailsViewModel(
 
     init {
 
-        val itemType =  object : TypeToken<List<Yoga>>(){}.type
-        val data = Gson().fromJson<List<Yoga>>(application.getSharedPreferences("data", Context.MODE_PRIVATE)
-            .getString("yogaData", null), itemType)
-        _yoga = data[id]
+        viewModelScope.launch {
+            val itemType =  object : TypeToken<List<Yoga>>(){}.type
+            DataStoreManager(application.applicationContext).getData().collect{
+                it?.let { storedData ->
+                    val data: List<Yoga> = Gson().fromJson(storedData, itemType)
+                    _yoga = data[id]
+                }
+            }
+        }
+
+
+
     }
 
 }

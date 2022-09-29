@@ -44,7 +44,6 @@ class YogaDetailsFragment : Fragment() {
     private val viewModel: YogaDetailsViewModel by viewModels{
         YogaDetailsViewModelFactory(args.yogaId, application)
     }
-    private val routeUtilViewModel by activityViewModels<RouteUtilViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
